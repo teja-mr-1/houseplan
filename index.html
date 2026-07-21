@@ -307,6 +307,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
   <script>
     // ─── Scene Setup ─────────────────────────────────────────────────────────────
     const scene = new THREE.Scene();
@@ -1845,33 +1846,23 @@
       return v;
     }
 
-    const audioCache = new Map();
-
-    async function preloadTourAudio() {
-      for (const step of detailedTour) {
-        if (!step.msg) continue;
-        const cleanText = step.msg.replace(/\([^)]*\)/g, '').trim();
-        if (!cleanText || audioCache.has(cleanText)) continue;
-        try {
-          const resp = await fetch('https://api.soundoftext.com/sounds', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ engine: 'Google', data: { text: cleanText, voice: 'te' } })
-          });
-          const json = await resp.json();
-          if (json && json.success && json.id) {
-            audioCache.set(cleanText, 'https://files.soundoftext.com/' + json.id + '.mp3');
-          }
-        } catch (e) {}
-      }
-    }
-    preloadTourAudio();
-
-    async function speakText(text) {
+    function speakText(text) {
       if (voiceMuted || !text) return;
 
       // Remove English text in parentheses for clean natural Telugu pronunciation
       const cleanText = text.replace(/\([^)]*\)/g, '').trim();
+
+      if (window.responsiveVoice && typeof window.responsiveVoice.speak === 'function') {
+        try {
+          window.responsiveVoice.cancel();
+          window.responsiveVoice.speak(cleanText, "Telugu Female", {
+            rate: getAudioPlaybackRate()
+          });
+          return;
+        } catch (rvErr) {
+          console.warn("ResponsiveVoice error, falling back:", rvErr);
+        }
+      }
 
       if (ttsAudio) {
         ttsAudio.pause();
@@ -1879,37 +1870,18 @@
       }
 
       try {
-        let audioUrl = audioCache.get(cleanText);
-        if (!audioUrl) {
-          const resp = await fetch('https://api.soundoftext.com/sounds', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ engine: 'Google', data: { text: cleanText, voice: 'te' } })
-          });
-          const json = await resp.json();
-          if (json && json.success && json.id) {
-            audioUrl = 'https://files.soundoftext.com/' + json.id + '.mp3';
-            audioCache.set(cleanText, audioUrl);
-          }
-        }
-
-        if (audioUrl) {
-          ttsAudio.src = audioUrl;
-          ttsAudio.playbackRate = getAudioPlaybackRate();
-          await ttsAudio.play();
-          return;
-        }
-      } catch (e) {
-        console.warn("SoundOfText Google TTS API error:", e);
-      }
-
-      // Direct fallback
-      try {
         const rawUrl = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=te&client=tw-ob&q=' + encodeURIComponent(cleanText);
         ttsAudio.src = rawUrl;
         ttsAudio.playbackRate = getAudioPlaybackRate();
-        await ttsAudio.play();
-      } catch (err) {}
+        ttsAudio.play().catch(err => {
+          if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+            const u = new SpeechSynthesisUtterance(cleanText);
+            u.lang = 'te-IN';
+            window.speechSynthesis.speak(u);
+          }
+        });
+      } catch (e) {}
     }
 
     // Pre-load voices for SpeechSynthesis

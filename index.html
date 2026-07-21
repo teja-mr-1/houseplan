@@ -961,10 +961,11 @@
       scene.add(innerEdge);
       roofMeshes.push(innerEdge); // Toggled!
 
-      // 2. Sabja Overhangs (Always visible)
+      // 2. Sabja Overhangs (100% Visible at all times)
+      const sabjaMat = holoBorderMat(0x00e5ff, 0.95);
       const addSabja = (wSVG, dSVG, xSVG, zSVG) => {
         const geo = new THREE.BoxGeometry(wSVG * S, 0.12, dSVG * S);
-        const m = new THREE.Mesh(geo, roofMat);
+        const m = new THREE.Mesh(geo, sabjaMat);
         m.position.set((xSVG - 210) * S, H + 0.06, (zSVG - 225) * S);
         scene.add(m);
 
@@ -980,12 +981,9 @@
       // West Sabja (X=90 to 400, Z=430 to 440)
       addSabja(310, 10, 245, 435);
 
-      // ─── Midde Parapet Walls ──────────────────────────────────────────────────────
+      // ─── Midde Parapet Walls (100% Visible at all times) ─────────────────────────
       const pThick = 0.05;
-      const pMat = new THREE.MeshStandardMaterial({
-        color: 0x4fc3f7, transparent: true, opacity: 0.5,
-        emissive: 0x0288d1, emissiveIntensity: 0.3, side: THREE.DoubleSide
-      });
+      const pMat = holoBorderMat(0x4fc3f7, 0.95);
 
       const addParapet = (x1, z1, x2, z2) => {
         let w = Math.abs(x2 - x1) * S;

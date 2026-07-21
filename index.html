@@ -1673,8 +1673,6 @@
       // Walk to Pooja10
       { svgPos: [280, 245], svgTgt: [280, 150], msg: "ఈశాన్య మూలలో 4x6 కొలతలతో పూజ కోసం ప్రత్యేకంగా రూపొందించిన పూజా గది ఉంది.", wait: 8000 },
       // Return outside Pooja room
-      //{ svgPos: [280, 245], svgTgt: [280, 280], msg: "పూజా గదిని దర్శించుకుని బయటికి వస్తున్నాం.", wait: 4000 },
-      // 1. Gas Stove / Cooking Counter (Facing South Counter at [360, 180])
       { svgPos: [330, 220], svgTgt: [360, 180], msg: "ఇప్పుడు మనం వంటగది లోపలికి వచ్చాము. ఇక్కడ చూస్తే, ఆగ్నేయ మూలలో వాస్తు ప్రకారం గ్యాస్ పొయ్యి పెట్టుకోవచ్చు", wait: 6000 },
       // 2. Fridge (Facing 3D Fridge Model at [360, 255])
       { svgPos: [330, 220], svgTgt: [360, 255], msg: "ఆ తర్వాత పక్కనే ఉన్న నైరుతి మూల లో ఫ్రిడ్జ్ (Fridge) పెట్టుకోవడానికి స్పేస్ ఉంది.", wait: 5000 },
@@ -1855,7 +1853,7 @@
         try {
           currentAudio.pause();
           currentAudio.currentTime = 0;
-        } catch (e) {}
+        } catch (e) { }
         currentAudio = null;
       }
 
@@ -1867,7 +1865,7 @@
         const a = new Audio(audioPath);
         a.playbackRate = getAudioPlaybackRate();
         currentAudio = a;
-        
+
         a.play().catch(err => {
           console.warn("Step " + index + " MP3 play error, falling back:", err);
           fallbackTTS(cleanText);
@@ -1912,7 +1910,7 @@
     function stopTour() {
       isTourActive = false;
       if (currentAudio) {
-        try { currentAudio.pause(); currentAudio.currentTime = 0; } catch (e) {}
+        try { currentAudio.pause(); currentAudio.currentTime = 0; } catch (e) { }
         currentAudio = null;
       }
       if ('speechSynthesis' in window) window.speechSynthesis.cancel();

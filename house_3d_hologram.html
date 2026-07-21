@@ -1846,35 +1846,45 @@
       return v;
     }
 
-    function speakText(text, index) {
-      if (voiceMuted) return;
+    let currentAudio = null;
 
-      if (ttsAudio) {
-        ttsAudio.pause();
-        ttsAudio.currentTime = 0;
+    function speakText(text, index) {
+      if (voiceMuted || !text || !text.trim()) return;
+
+      if (currentAudio) {
+        try {
+          currentAudio.pause();
+          currentAudio.currentTime = 0;
+        } catch (e) {}
+        currentAudio = null;
       }
+
+      const cleanText = text.replace(/\([^)]*\)/g, '').trim();
+      if (!cleanText) return;
 
       if (index !== undefined && index !== null) {
         const audioPath = 'audio/step_' + index + '.mp3';
-        ttsAudio.src = audioPath;
-        ttsAudio.playbackRate = getAudioPlaybackRate();
-        ttsAudio.play().catch(err => {
-          console.warn("Local audio playback error, falling back:", err);
-          fallbackTTS(text);
+        const a = new Audio(audioPath);
+        a.playbackRate = getAudioPlaybackRate();
+        currentAudio = a;
+        
+        a.play().catch(err => {
+          console.warn("Step " + index + " MP3 play error, falling back:", err);
+          fallbackTTS(cleanText);
         });
         return;
       }
 
-      fallbackTTS(text);
+      fallbackTTS(cleanText);
     }
 
-    function fallbackTTS(text) {
-      if (!text) return;
-      const cleanText = text.replace(/\([^)]*\)/g, '').trim();
+    function fallbackTTS(cleanText) {
+      if (!cleanText) return;
       const rawUrl = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=te&client=tw-ob&q=' + encodeURIComponent(cleanText);
-      ttsAudio.src = rawUrl;
-      ttsAudio.playbackRate = getAudioPlaybackRate();
-      ttsAudio.play().catch(err => {
+      const a = new Audio(rawUrl);
+      a.playbackRate = getAudioPlaybackRate();
+      currentAudio = a;
+      a.play().catch(err => {
         if ('speechSynthesis' in window) {
           window.speechSynthesis.cancel();
           const u = new SpeechSynthesisUtterance(cleanText);
@@ -1901,7 +1911,10 @@
 
     function stopTour() {
       isTourActive = false;
-      if (ttsAudio) { ttsAudio.pause(); ttsAudio.currentTime = 0; }
+      if (currentAudio) {
+        try { currentAudio.pause(); currentAudio.currentTime = 0; } catch (e) {}
+        currentAudio = null;
+      }
       if ('speechSynthesis' in window) window.speechSynthesis.cancel();
       if (characterGroup) characterGroup.visible = false;
       document.getElementById('tour-subtitle').style.opacity = '0';

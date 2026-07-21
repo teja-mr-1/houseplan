@@ -961,18 +961,16 @@
       scene.add(innerEdge);
       roofMeshes.push(innerEdge); // Toggled!
 
-      // 2. Sabja Overhangs (Toggled with roof)
+      // 2. Sabja Overhangs (Always visible)
       const addSabja = (wSVG, dSVG, xSVG, zSVG) => {
         const geo = new THREE.BoxGeometry(wSVG * S, 0.12, dSVG * S);
         const m = new THREE.Mesh(geo, roofMat);
         m.position.set((xSVG - 210) * S, H + 0.06, (zSVG - 225) * S);
         scene.add(m);
-        roofMeshes.push(m);
 
         const e = new THREE.LineSegments(new THREE.EdgesGeometry(geo), lineMat);
         e.position.copy(m.position);
         scene.add(e);
-        roofMeshes.push(e);
       };
 
       // North Sabja (X=80 to 90, Z=140 to 440)
@@ -1003,13 +1001,11 @@
         const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, 0.6, d), pMat);
         mesh.position.set(mx * S, H + 0.42, mz * S);
         scene.add(mesh);
-        roofMeshes.push(mesh);
 
         const pEdges = new THREE.EdgesGeometry(mesh.geometry);
         const pEdgeMesh = new THREE.LineSegments(pEdges, lineMat);
         pEdgeMesh.position.copy(mesh.position);
         scene.add(pEdgeMesh);
-        roofMeshes.push(pEdgeMesh);
       };
 
       // Continuous loop around the walkable roof

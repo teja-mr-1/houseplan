@@ -1845,6 +1845,28 @@
       return v;
     }
 
+    const audioCache = new Map();
+
+    async function preloadTourAudio() {
+      for (const step of detailedTour) {
+        if (!step.msg) continue;
+        const cleanText = step.msg.replace(/\([^)]*\)/g, '').trim();
+        if (!cleanText || audioCache.has(cleanText)) continue;
+        try {
+          const resp = await fetch('https://api.soundoftext.com/sounds', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ engine: 'Google', data: { text: cleanText, voice: 'te' } })
+          });
+          const json = await resp.json();
+          if (json && json.success && json.id) {
+            audioCache.set(cleanText, 'https://files.soundoftext.com/' + json.id + '.mp3');
+          }
+        } catch (e) {}
+      }
+    }
+    preloadTourAudio();
+
     async function speakText(text) {
       if (voiceMuted || !text) return;
 
@@ -1856,38 +1878,38 @@
         ttsAudio.currentTime = 0;
       }
 
-      const rawUrl = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=te&client=tw-ob&q=' + encodeURIComponent(cleanText);
-
       try {
-        // Fetch audio with no-referrer policy to bypass GitHub Pages domain blocking
-        let resp = await fetch(rawUrl, { referrerPolicy: 'no-referrer' });
-        if (!resp.ok) {
-          resp = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(rawUrl));
-        }
-        const blob = await resp.blob();
-        const blobUrl = URL.createObjectURL(blob);
-        ttsAudio.src = blobUrl;
-        ttsAudio.playbackRate = getAudioPlaybackRate();
-        await ttsAudio.play();
-      } catch (e) {
-        console.warn("Blob audio fetch error, trying direct play:", e);
-        try {
-          ttsAudio.src = rawUrl;
-          ttsAudio.playbackRate = getAudioPlaybackRate();
-          await ttsAudio.play();
-        } catch (err) {
-          console.warn("SpeechSynthesis fallback:", err);
-          if ('speechSynthesis' in window) {
-            window.speechSynthesis.cancel();
-            const u = new SpeechSynthesisUtterance(cleanText);
-            u.lang = 'te-IN';
-            const naturalVoice = getTeluguVoice();
-            if (naturalVoice) u.voice = naturalVoice;
-            u.rate = getAudioPlaybackRate();
-            window.speechSynthesis.speak(u);
+        let audioUrl = audioCache.get(cleanText);
+        if (!audioUrl) {
+          const resp = await fetch('https://api.soundoftext.com/sounds', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ engine: 'Google', data: { text: cleanText, voice: 'te' } })
+          });
+          const json = await resp.json();
+          if (json && json.success && json.id) {
+            audioUrl = 'https://files.soundoftext.com/' + json.id + '.mp3';
+            audioCache.set(cleanText, audioUrl);
           }
         }
+
+        if (audioUrl) {
+          ttsAudio.src = audioUrl;
+          ttsAudio.playbackRate = getAudioPlaybackRate();
+          await ttsAudio.play();
+          return;
+        }
+      } catch (e) {
+        console.warn("SoundOfText Google TTS API error:", e);
       }
+
+      // Direct fallback
+      try {
+        const rawUrl = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=te&client=tw-ob&q=' + encodeURIComponent(cleanText);
+        ttsAudio.src = rawUrl;
+        ttsAudio.playbackRate = getAudioPlaybackRate();
+        await ttsAudio.play();
+      } catch (err) {}
     }
 
     // Pre-load voices for SpeechSynthesis

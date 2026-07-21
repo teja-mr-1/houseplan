@@ -1845,7 +1845,7 @@
       return v;
     }
 
-    function speakText(text) {
+    async function speakText(text) {
       if (voiceMuted || !text) return;
 
       // Remove English text in parentheses for clean natural Telugu pronunciation
@@ -1856,14 +1856,27 @@
         ttsAudio.currentTime = 0;
       }
 
-      const googleTtsUrl = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=te&client=tw-ob&q=' + encodeURIComponent(cleanText);
-      ttsAudio.src = googleTtsUrl;
-      ttsAudio.playbackRate = getAudioPlaybackRate();
+      const rawUrl = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=te&client=tw-ob&q=' + encodeURIComponent(cleanText);
 
-      const playPromise = ttsAudio.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(err => {
-          console.warn("Google Audio Play Error, switching to Natural Telugu Synthesis:", err);
+      try {
+        // Fetch audio with no-referrer policy to bypass GitHub Pages domain blocking
+        let resp = await fetch(rawUrl, { referrerPolicy: 'no-referrer' });
+        if (!resp.ok) {
+          resp = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(rawUrl));
+        }
+        const blob = await resp.blob();
+        const blobUrl = URL.createObjectURL(blob);
+        ttsAudio.src = blobUrl;
+        ttsAudio.playbackRate = getAudioPlaybackRate();
+        await ttsAudio.play();
+      } catch (e) {
+        console.warn("Blob audio fetch error, trying direct play:", e);
+        try {
+          ttsAudio.src = rawUrl;
+          ttsAudio.playbackRate = getAudioPlaybackRate();
+          await ttsAudio.play();
+        } catch (err) {
+          console.warn("SpeechSynthesis fallback:", err);
           if ('speechSynthesis' in window) {
             window.speechSynthesis.cancel();
             const u = new SpeechSynthesisUtterance(cleanText);
@@ -1873,7 +1886,7 @@
             u.rate = getAudioPlaybackRate();
             window.speechSynthesis.speak(u);
           }
-        });
+        }
       }
     }
 

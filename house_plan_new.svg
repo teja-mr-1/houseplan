@@ -1,0 +1,260 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 700 550" width="2970" height="2100">
+  <defs>
+    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#e0e0e0" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="-50" y="-50" width="750" height="650" fill="url(#grid)" />
+  
+  <!-- Kuni Area (Abandoned South-East) -->
+  <polygon points="420,0 570,0 420,450" fill="#f5f5f5" stroke="#9e9e9e" stroke-dasharray="5,5" stroke-width="2"/>
+  <text x="470" y="150" font-family="Arial" font-size="10" fill="#757575">వదిలేసిన కుణి (ఆగ్నేయం)</text>
+
+  <!-- Main Compound Wall -->
+  <polygon points="0,450 0,0 420,0 420,450" fill="#e8f5e9" stroke="#2e7d32" stroke-width="5"/>
+  
+  <!-- Compound Gates -->
+  <!-- NW corner on West wall -->
+  <rect x="10" y="445" width="40" height="10" fill="#e8f5e9"/>
+  <line x1="10" y1="450" x2="10" y2="470" stroke="#000" stroke-width="2"/>
+  <line x1="50" y1="450" x2="50" y2="470" stroke="#000" stroke-width="2"/>
+  <text x="30" y="485" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">గేటు</text>
+  
+  <!-- SE corner on South wall -->
+  <rect x="415" y="10" width="10" height="40" fill="#e8f5e9"/>
+  <line x1="420" y1="10" x2="440" y2="10" stroke="#000" stroke-width="2"/>
+  <line x1="420" y1="50" x2="440" y2="50" stroke="#000" stroke-width="2"/>
+  <text x="445" y="35" font-family="Arial" font-size="12" font-weight="bold" fill="#000">గేటు</text>
+
+  <text x="-35" y="225" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-90 -35 225)" fill="#000">ఉత్తర సరిహద్దు (9' ఖాళీ)</text>
+  <text x="210" y="-40" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">తూర్పు సరిహద్దు (14' ఖాళీ)</text>
+  <text x="210" y="490" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">పడమర సరిహద్దు (2' ఖాళీ)</text>
+  <text x="445" y="225" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-90 445 225)" fill="#000">దక్షిణ సరిహద్దు (2' ఖాళీ)</text>
+
+
+
+  <!-- Plot Dimensions Lines and Text -->
+  <!-- North (Left) 45' -->
+  <line x1="-20" y1="0" x2="-20" y2="210" stroke="#1b5e20" stroke-width="1"/>
+  <line x1="-20" y1="240" x2="-20" y2="450" stroke="#1b5e20" stroke-width="1"/>
+  <line x1="-25" y1="0" x2="-15" y2="0" stroke="#1b5e20" stroke-width="1"/>
+  <line x1="-25" y1="450" x2="-15" y2="450" stroke="#1b5e20" stroke-width="1"/>
+  <text x="-20" y="225" font-family="Arial" font-size="12" fill="#1b5e20" font-weight="bold" text-anchor="middle" transform="rotate(-90 -20 225)">45'</text>
+
+  <!-- West (Bottom) 42' -->
+  <line x1="0" y1="465" x2="185" y2="465" stroke="#1b5e20" stroke-width="1"/>
+  <line x1="235" y1="465" x2="420" y2="465" stroke="#1b5e20" stroke-width="1"/>
+  <line x1="0" y1="460" x2="0" y2="470" stroke="#1b5e20" stroke-width="1"/>
+  <line x1="420" y1="460" x2="420" y2="470" stroke="#1b5e20" stroke-width="1"/>
+  <text x="210" y="470" font-family="Arial" font-size="12" fill="#1b5e20" font-weight="bold" text-anchor="middle">42'</text>
+
+  <!-- East (Top) 42' -->
+  <line x1="0" y1="-20" x2="185" y2="-20" stroke="#1b5e20" stroke-width="1"/>
+  <line x1="235" y1="-20" x2="420" y2="-20" stroke="#1b5e20" stroke-width="1"/>
+  <line x1="0" y1="-25" x2="0" y2="-15" stroke="#1b5e20" stroke-width="1"/>
+  <line x1="420" y1="-25" x2="420" y2="-15" stroke="#1b5e20" stroke-width="1"/>
+  <text x="210" y="-15" font-family="Arial" font-size="12" fill="#1b5e20" font-weight="bold" text-anchor="middle">42'</text>
+
+  <!-- East Kuni (Top Right) 15' -->
+  <line x1="420" y1="-20" x2="480" y2="-20" stroke="#d32f2f" stroke-width="1"/>
+  <line x1="510" y1="-20" x2="570" y2="-20" stroke="#d32f2f" stroke-width="1"/>
+  <line x1="570" y1="-25" x2="570" y2="-15" stroke="#d32f2f" stroke-width="1"/>
+  <text x="495" y="-15" font-family="Arial" font-size="12" fill="#d32f2f" font-weight="bold" text-anchor="middle">15'</text>
+
+
+
+  <!-- Portico (East Side) - 6 Feet -->
+  <rect x="100" y="80" width="155" height="60" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="177.5" y="115" font-family="Arial" font-size="12" font-weight="bold" fill="#1976d2" text-anchor="middle">పోర్టికో (6')</text>
+
+  <!-- House Outer Walls (12" thickness outer, 6" inner represented by gray background) -->
+  <rect x="90" y="140" width="310" height="290" fill="#ffffff" stroke="#000" stroke-width="2.5"/>
+  
+  <!-- Outer East (Top) with Main Door gap (105 to 135) -->
+  <rect x="100" y="140" width="5" height="10" fill="#1e88e5"/>
+  <rect x="135" y="140" width="255" height="10" fill="#1e88e5"/>
+  <!-- 12 inches labels on the 4 outer walls -->
+  <text x="95" y="260" font-family="Arial" font-size="10" font-weight="bold" fill="#000" text-anchor="middle" alignment-baseline="middle" transform="rotate(-90 95 260)">12"</text>
+  <text x="250" y="145" font-family="Arial" font-size="10" font-weight="bold" fill="#000" text-anchor="middle" alignment-baseline="middle">12"</text>
+  <text x="395" y="260" font-family="Arial" font-size="10" font-weight="bold" fill="#000" text-anchor="middle" alignment-baseline="middle" transform="rotate(90 395 260)">12"</text>
+  <text x="250" y="425" font-family="Arial" font-size="10" font-weight="bold" fill="#000" text-anchor="middle" alignment-baseline="middle">12"</text>
+  
+  <!-- Internal Rooms (Pure Interior Space) -->
+  <!-- NW Room (Bed) -->
+  <rect x="100" y="285" width="100" height="135" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="150" y="352.5" font-family="Arial" font-size="12" font-weight="bold" fill="#000" text-anchor="middle">బెడ్ రూమ్</text>
+  <text x="150" y="372.5" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">10 x 13½</text>
+
+  <!-- Bath 1 -->
+  <rect x="205" y="285" width="50" height="60" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="230" y="315" font-family="Arial" font-size="10" fill="#000" text-anchor="middle">బాత్</text>
+  <text x="230" y="330" font-family="Arial" font-size="10" fill="#000" text-anchor="middle">5 x 6</text>
+
+  <!-- Bath 2 -->
+  <rect x="205" y="350" width="50" height="70" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="230" y="385" font-family="Arial" font-size="10" fill="#000" text-anchor="middle">బాత్</text>
+  <text x="230" y="400" font-family="Arial" font-size="10" fill="#000" text-anchor="middle">5 x 7</text>
+
+  <!-- SW Room (Master Bed) -->
+  <rect x="260" y="285" width="130" height="135" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="325" y="352.5" font-family="Arial" font-size="12" font-weight="bold" fill="#000" text-anchor="middle">మాస్టర్ బెడ్ రూమ్</text>
+  <text x="325" y="372.5" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">13 x 13½</text>
+
+  <!-- NE Room (Hall) -->
+  <rect x="100" y="150" width="155" height="130" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="177.5" y="215" font-family="Arial" font-size="12" font-weight="bold" fill="#000" text-anchor="middle">హాల్</text>
+  <text x="177.5" y="235" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">15½ x 13</text>
+
+  <!-- SE Room (Kitchen) -->
+  <rect x="260" y="150" width="130" height="130" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="325" y="215" font-family="Arial" font-size="12" font-weight="bold" fill="#000" text-anchor="middle">కిచెన్</text>
+  <text x="325" y="235" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">13 x 13</text>
+
+  <!-- Internal Walls 6" Labels -->
+  <g font-family="Arial" font-size="8" font-weight="bold" fill="#000" text-anchor="middle" alignment-baseline="middle">
+    <text x="190" y="282.5">6"</text>
+    <text x="340" y="282.5">6"</text>
+    <text x="230" y="347.5">6"</text>
+    <text x="257.5" y="182.5" transform="rotate(-90 257.5 182.5)">6"</text>
+    <text x="257.5" y="320" transform="rotate(-90 257.5 320)">6"</text>
+    <text x="202.5" y="380" transform="rotate(-90 202.5 380)">6"</text>
+  </g>
+
+
+
+  <!-- Internal Doors (White Gaps) -->
+  <!-- Hall to Kitchen (remove half wall on bottom side) -->
+  <rect x="253" y="215" width="9" height="66" fill="#fff"/>
+  <!-- Kitchen to Master Bed Room (NE corner + extension) -->
+  <rect x="265" y="278" width="30" height="9" fill="#fff"/>
+  <!-- Master Bed to Bath 2 -->
+  <rect x="253" y="380" width="9" height="30" fill="#fff"/>
+  <!-- NW Bed to Bath 1 -->
+  <rect x="198" y="305" width="9" height="30" fill="#fff"/>
+  <!-- NW Bed (NE corner + extension) to Hall -->
+  <rect x="105" y="278" width="30" height="9" fill="#fff"/>
+
+  <!-- Doors Symbols (Open arcs) -->
+  
+  <!-- Main Door (East facing) -->
+  <g>
+    <!-- White space to clear wall -->
+    <rect x="162.5" y="138" width="30" height="14" fill="#fff"/>
+    <!-- Door leaf -->
+    <line x1="105" y1="150" x2="105" y2="180" stroke="#ffaa00" stroke-width="4"/>
+    <!-- Door swing arc -->
+    <path d="M 105 180 A 30 30 0 0 0 135 150" fill="none" stroke="#ffaa00" stroke-width="2" stroke-dasharray="4"/>
+    <text x="177.5" y="135" font-family="Arial" font-size="10" font-weight="bold" fill="#d32f2f" text-anchor="middle">మెయిన్ డోర్</text>
+  </g>
+
+  <!-- NW Bed to Hall -->
+  <g>
+    <line x1="105" y1="285" x2="105" y2="315" stroke="#8d6e63" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 135 285 A 30 30 0 0 1 105 315" fill="none" stroke="#8d6e63" stroke-width="1" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- Kitchen to Master Bed -->
+  <g>
+    <line x1="265" y1="285" x2="265" y2="315" stroke="#8d6e63" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 295 285 A 30 30 0 0 1 265 315" fill="none" stroke="#8d6e63" stroke-width="1" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- Master Bed to Bath 2 -->
+  <g>
+    <line x1="255" y1="380" x2="225" y2="380" stroke="#8d6e63" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 255 410 A 30 30 0 0 1 225 380" fill="none" stroke="#8d6e63" stroke-width="1" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- NW Bed to Bath 1 -->
+  <g>
+    <line x1="205" y1="305" x2="235" y2="305" stroke="#8d6e63" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 205 335 A 30 30 0 0 0 235 305" fill="none" stroke="#8d6e63" stroke-width="1" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- Stairs (East Side beside Kitchen) -->
+  <g transform="translate(290, 80)">
+    <!-- Shadow to make it pop 3D -->
+    <polygon points="3,3 83,3 83,63 3,63" fill="#000" opacity="0.15"/>
+    
+    <!-- Staircase Base -->
+    <rect x="0" y="0" width="80" height="60" fill="#fafafa" stroke="#616161" stroke-width="1.5"/>
+    
+    <!-- Landing (Now on the Right / South Side) -->
+    <rect x="50" y="0" width="30" height="60" fill="#e0e0e0" stroke="#757575" stroke-width="1"/>
+    
+    <!-- Steps: Up to Landing (Bottom half, moving right/South) -->
+    <!-- Riser on left edge of each tread -->
+    <g stroke="#9e9e9e" stroke-width="0.5">
+      <rect x="0" y="30" width="10" height="30" fill="#f5f5f5"/>
+      <rect x="0" y="30" width="2" height="30" fill="#bdbdbd" stroke="none"/>
+      
+      <rect x="10" y="30" width="10" height="30" fill="#f5f5f5"/>
+      <rect x="10" y="30" width="2" height="30" fill="#bdbdbd" stroke="none"/>
+      
+      <rect x="20" y="30" width="10" height="30" fill="#f5f5f5"/>
+      <rect x="20" y="30" width="2" height="30" fill="#bdbdbd" stroke="none"/>
+      
+      <rect x="30" y="30" width="10" height="30" fill="#f5f5f5"/>
+      <rect x="30" y="30" width="2" height="30" fill="#bdbdbd" stroke="none"/>
+      
+      <rect x="40" y="30" width="10" height="30" fill="#f5f5f5"/>
+      <rect x="40" y="30" width="2" height="30" fill="#bdbdbd" stroke="none"/>
+    </g>
+
+    <!-- Steps: Landing to Top (Top half, moving left/North) -->
+    <!-- Riser on right edge of each tread (deeper shadow because higher) -->
+    <g stroke="#9e9e9e" stroke-width="0.5">
+      <rect x="40" y="0" width="10" height="30" fill="#eeeeee"/>
+      <rect x="47" y="0" width="3" height="30" fill="#757575" stroke="none"/>
+      
+      <rect x="30" y="0" width="10" height="30" fill="#eeeeee"/>
+      <rect x="37" y="0" width="3" height="30" fill="#757575" stroke="none"/>
+      
+      <rect x="20" y="0" width="10" height="30" fill="#eeeeee"/>
+      <rect x="27" y="0" width="3" height="30" fill="#757575" stroke="none"/>
+      
+      <rect x="10" y="0" width="10" height="30" fill="#eeeeee"/>
+      <rect x="17" y="0" width="3" height="30" fill="#757575" stroke="none"/>
+      
+      <rect x="0" y="0" width="10" height="30" fill="#eeeeee"/>
+      <rect x="7" y="0" width="3" height="30" fill="#757575" stroke="none"/>
+    </g>
+
+    <!-- Railing -->
+    <!-- Center Railing -->
+    <line x1="0" y1="30" x2="65" y2="30" stroke="#424242" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="30" r="2.5" fill="#424242"/>
+    <circle cx="65" cy="30" r="2.5" fill="#424242"/>
+    <!-- Outer Railing -->
+    <polyline points="0,57 77,57 77,3 0,3" fill="none" stroke="#424242" stroke-width="2.5" stroke-linejoin="round"/>
+    
+    <!-- Direction Arrow -->
+    <polyline points="5,45 65,45 65,15 5,15" fill="none" stroke="#d32f2f" stroke-width="1.5"/>
+    <polygon points="7,10 0,15 7,20" fill="#d32f2f"/>
+    <text x="35" y="42" font-family="Arial" font-size="10" font-weight="bold" fill="#d32f2f" text-anchor="middle">UP</text>
+  </g>
+
+  <!-- Empty Space Dimensions (Setbacks) -->
+  <line x1="0" y1="330" x2="90" y2="330" stroke="#d32f2f" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="45" y="325" font-family="Arial" font-size="14" font-weight="bold" fill="#d32f2f" text-anchor="middle">9'</text>
+  
+  <line x1="280" y1="0" x2="280" y2="140" stroke="#d32f2f" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="290" y="70" font-family="Arial" font-size="14" font-weight="bold" fill="#d32f2f">14'</text>
+
+  <line x1="280" y1="430" x2="280" y2="450" stroke="#d32f2f" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="290" y="445" font-family="Arial" font-size="14" font-weight="bold" fill="#d32f2f">2'</text>
+
+  <line x1="400" y1="330" x2="420" y2="330" stroke="#d32f2f" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="410" y="325" font-family="Arial" font-size="14" font-weight="bold" fill="#d32f2f" text-anchor="middle">2'</text>
+
+  <!-- Compass -->
+  <g transform="translate(600, 50)">
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#000" stroke-width="2"/>
+    <text x="-35" y="5" font-family="Arial" font-size="12" text-anchor="middle">ఉత్తరం</text>
+    <text x="35" y="5" font-family="Arial" font-size="12" text-anchor="middle">దక్షిణం</text>
+    <text x="0" y="-30" font-family="Arial" font-size="12" text-anchor="middle">తూర్పు</text>
+    <text x="0" y="40" font-family="Arial" font-size="12" text-anchor="middle">పడమర</text>
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#000" stroke-width="2"/>
+    <line x1="0" y1="-20" x2="0" y2="20" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>

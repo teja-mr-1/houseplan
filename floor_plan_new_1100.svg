@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="839.85909pt" height="887.505882pt" viewBox="0 0 839.85909 887.505882" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-12T20:20:50.922334</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 887.505882 
+L 839.85909 887.505882 
+L 839.85909 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 128.047325 803.717647 
+L 756.070855 803.717647 
+L 756.070855 114.423529 
+L 128.047325 114.423529 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #f4f9f1; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #2e7d32; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 204.635561 742.447059 
+L 725.435561 742.447059 
+L 725.435561 252.282353 
+L 204.635561 252.282353 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 204.635561 742.447059 
+L 725.435561 742.447059 
+L 725.435561 730.958824 
+L 204.635561 730.958824 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #2c3e50"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 204.635561 263.770588 
+L 725.435561 263.770588 
+L 725.435561 252.282353 
+L 204.635561 252.282353 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #2c3e50"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 204.635561 730.958824 
+L 216.123796 730.958824 
+L 216.123796 420.776471 
+L 204.635561 420.776471 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #2c3e50"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 204.635561 359.505882 
+L 216.123796 359.505882 
+L 216.123796 263.770588 
+L 204.635561 263.770588 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #2c3e50"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 713.947325 730.958824 
+L 725.435561 730.958824 
+L 725.435561 263.770588 
+L 713.947325 263.770588 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #2c3e50"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 216.123796 547.147059 
+L 327.176737 547.147059 
+L 327.176737 539.488235 
+L 216.123796 539.488235 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #2c3e50"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 373.129678 547.147059 
+L 388.447325 547.147059 
+L 388.447325 539.488235 
+L 373.129678 539.488235 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #2c3e50"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 434.400267 547.147059 
+L 556.941443 547.147059 
+L 556.941443 539.488235 
+L 434.400267 539.488235 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #2c3e50"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 618.212031 547.147059 
+L 713.947325 547.147059 
+L 713.947325 539.488235 
+L 618.212031 539.488235 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #2c3e50"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 376.95909 730.958824 
+L 384.617914 730.958824 
+L 384.617914 547.147059 
+L 376.95909 547.147059 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #2c3e50"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 537.794384 730.958824 
+L 545.453208 730.958824 
+L 545.453208 547.147059 
+L 537.794384 547.147059 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #2c3e50"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 250.588502 742.447059 
+L 327.176737 742.447059 
+L 327.176737 730.958824 
+L 250.588502 730.958824 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 204.635561 681.176471 
+L 216.123796 681.176471 
+L 216.123796 604.588235 
+L 204.635561 604.588235 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 419.082619 742.447059 
+L 495.670855 742.447059 
+L 495.670855 730.958824 
+L 419.082619 730.958824 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 587.576737 742.447059 
+L 664.164972 742.447059 
+L 664.164972 730.958824 
+L 587.576737 730.958824 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 713.947325 681.176471 
+L 725.435561 681.176471 
+L 725.435561 604.588235 
+L 713.947325 604.588235 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 713.947325 436.094118 
+L 725.435561 436.094118 
+L 725.435561 359.505882 
+L 713.947325 359.505882 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 311.85909 263.770588 
+L 403.764972 263.770588 
+L 403.764972 252.282353 
+L 311.85909 252.282353 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 495.670855 263.770588 
+L 587.576737 263.770588 
+L 587.576737 252.282353 
+L 495.670855 252.282353 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 204.635561 512.682353 
+L 216.123796 512.682353 
+L 216.123796 451.411765 
+L 204.635561 451.411765 
+z
+" clip-path="url(#pd416bb1c5b)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 216.123796 420.776471 
+C 232.367534 420.776471 247.962587 414.316788 259.448644 402.830731 
+C 270.934702 391.344673 277.394384 375.74962 277.394384 359.505882 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 327.176737 593.1 
+C 339.359541 593.1 351.05583 588.255238 359.670373 579.640695 
+C 368.284916 571.026152 373.129678 559.329862 373.129678 547.147059 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 388.447325 547.147059 
+C 388.447325 559.329862 393.292087 571.026152 401.90663 579.640695 
+C 410.521173 588.255238 422.217463 593.1 434.400267 593.1 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 250.588502 736.702941 
+L 327.176737 736.702941 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 210.379678 681.176471 
+L 210.379678 604.588235 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 419.082619 736.702941 
+L 495.670855 736.702941 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 587.576737 736.702941 
+L 664.164972 736.702941 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 719.691443 681.176471 
+L 719.691443 604.588235 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 719.691443 436.094118 
+L 719.691443 359.505882 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 311.85909 258.026471 
+L 403.764972 258.026471 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 495.670855 258.026471 
+L 587.576737 258.026471 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 210.379678 512.682353 
+L 210.379678 451.411765 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 216.123796 359.505882 
+L 277.394384 359.505882 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke: #000000; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 327.176737 547.147059 
+L 327.176737 593.1 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke: #000000; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_12">
+    <path d="M 434.400267 547.147059 
+L 434.400267 593.1 
+" clip-path="url(#pd416bb1c5b)" style="fill: none; stroke: #000000; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #111111" transform="translate(270.045818 624.392768)">పడకగది 1</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #111111" transform="translate(255.206131 635.667893)">(Bed 1 - నైరుతి)</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #c0392b" x="296.541443" y="654.351333" transform="rotate(-0 296.541443 654.351333)">10'6" × 12'0"</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #111111" transform="translate(434.710524 623.707456)">పడకగది 2</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #111111" transform="translate(414.256149 636.366331)">(Bed 2 - దక్షిణం)</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #c0392b" x="461.206149" y="654.351333" transform="rotate(-0 461.206149 654.351333)">10'0" × 12'0"</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #111111" transform="translate(608.424642 623.707456)">వంటగది</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #111111" transform="translate(569.902767 636.366331)">(Kitchen - ఆగ్నేయం)</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #c0392b" x="629.700267" y="654.351333" transform="rotate(-0 629.700267 654.351333)">11'0" × 12'0"</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #111111" transform="translate(427.343373 376.531665)">చావడి / హాలు</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #111111" transform="translate(379.575873 393.377415)">(Hall - వాయువ్యం / ఉత్తరం)</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #c0392b" x="465.035561" y="409.26898" transform="rotate(-0 465.035561 409.26898)">32'6" × 18'0"</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #555555" transform="translate(574.580878 540.723538)">కమాను</text>
+    <text style="font-size: 9px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #555555" transform="translate(573.518456 549.188319)">(Arch)</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 11px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #2e7d32" x="442.05909" y="186.147629" transform="rotate(-0 442.05909 186.147629)">ఉత్తరం ఖాళీ స్థలం (North Setback) - 9' 0"</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 11px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #2e7d32" x="442.05909" y="775.87704" transform="rotate(-0 442.05909 775.87704)">దక్షిణం ఖాళీ స్థలం (South Setback) - 4' 0"</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 11px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #2e7d32" transform="translate(149.281131 476.671054)">పడమర</text>
+    <text style="font-size: 11px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #2e7d32" transform="translate(149.159099 487.006585)">(West)</text>
+    <text style="font-size: 11px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #2e7d32" transform="translate(166.341443 500.402523)"/>
+    <text style="font-size: 11px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #2e7d32" transform="translate(154.445115 510.60571)">5' 0"</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 11px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #2e7d32" transform="translate(723.726411 477.292382)">తూర్పు</text>
+    <text style="font-size: 11px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #2e7d32" transform="translate(723.570864 487.627914)">(East)</text>
+    <text style="font-size: 11px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #2e7d32" transform="translate(740.753208 501.023851)"/>
+    <text style="font-size: 11px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #2e7d32" transform="translate(728.85688 511.227039)">2' 0"</text>
+   </g>
+   <g id="patch_27">
+    <path d="M 104.77082 389.391176 
+Q 146.022571 389.391176 187.274322 389.391176 
+L 187.274322 387.141176 
+Q 193.274551 388.641176 199.274779 390.141176 
+Q 193.274551 391.641176 187.274322 393.141176 
+L 187.274322 390.891176 
+Q 146.022571 390.891176 104.77082 390.891176 
+L 104.77082 389.391176 
+z
+" style="stroke: #000000; stroke-linecap: round"/>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(39.055312 387.069426)">ముఖద్వారం</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(7.2 398.802301)">(Main Entrance)</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="442.05909" y="94.749871" transform="rotate(-0 442.05909 94.749871)">ఉత్తరం (NORTH)</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="442.05909" y="845.314577" transform="rotate(-0 442.05909 845.314577)">దక్షిణం (SOUTH)</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(52.784467 485.971023)">పడమర</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(54.167748 498.185742)">(WEST)</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(788.004104 486.901335)">తూర్పు</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(789.414807 499.116054)">(EAST)</text>
+   </g>
+   <g id="patch_28">
+    <path d="M 752.954791 811.376471 
+Q 442.060688 811.376471 131.166585 811.376471 
+" style="fill: none; stroke: #1565c0; stroke-linecap: round"/>
+    <path d="M 748.954791 809.376471 
+L 752.954791 811.376471 
+L 748.954791 813.376471 
+" style="fill: none; stroke: #1565c0; stroke-linecap: round"/>
+    <path d="M 135.166585 813.376471 
+L 131.166585 811.376471 
+L 135.166585 809.376471 
+" style="fill: none; stroke: #1565c0; stroke-linecap: round"/>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #1565c0" x="442.05909" y="826.379292" transform="rotate(-0 442.05909 826.379292)">ప్లాట్ వెడల్పు: 41' 0"</text>
+   </g>
+   <g id="patch_29">
+    <path d="M 120.388502 117.542574 
+Q 120.388502 459.070871 120.388502 800.599168 
+" style="fill: none; stroke: #1565c0; stroke-linecap: round"/>
+    <path d="M 118.388502 121.542574 
+L 120.388502 117.542574 
+L 122.388502 121.542574 
+" style="fill: none; stroke: #1565c0; stroke-linecap: round"/>
+    <path d="M 122.388502 796.599168 
+L 120.388502 800.599168 
+L 118.388502 796.599168 
+" style="fill: none; stroke: #1565c0; stroke-linecap: round"/>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #1565c0" transform="translate(113.946618 505.871369) rotate(-90)">ప్లాట్ పొడవు: 45' 0"</text>
+   </g>
+   <g id="patch_30">
+    <path d="M 722.318912 754.701176 
+Q 465.035684 754.701176 207.752456 754.701176 
+" style="fill: none; stroke: #c0392b; stroke-linecap: round"/>
+    <path d="M 718.318912 752.701176 
+L 722.318912 754.701176 
+L 718.318912 756.701176 
+" style="fill: none; stroke: #c0392b; stroke-linecap: round"/>
+    <path d="M 211.752456 756.701176 
+L 207.752456 754.701176 
+L 211.752456 752.701176 
+" style="fill: none; stroke: #c0392b; stroke-linecap: round"/>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #c0392b" x="465.035561" y="767.964154" transform="rotate(-0 465.035561 767.964154)">ఇంటి వెడల్పు (House Width): 34' 0"</text>
+   </g>
+   <g id="patch_31">
+    <path d="M 737.689678 255.401105 
+Q 737.689678 497.365065 737.689678 739.329024 
+" style="fill: none; stroke: #c0392b; stroke-linecap: round"/>
+    <path d="M 735.689678 259.401105 
+L 737.689678 255.401105 
+L 739.689678 259.401105 
+" style="fill: none; stroke: #c0392b; stroke-linecap: round"/>
+    <path d="M 739.689678 735.329024 
+L 737.689678 739.329024 
+L 735.689678 735.329024 
+" style="fill: none; stroke: #c0392b; stroke-linecap: round"/>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; fill: #c0392b" transform="translate(746.351875 413.869393) rotate(-270)">ఇంటి పొడవు (House Length): 32' 0"</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="442.05909" y="41.900294" transform="rotate(-0 442.05909 41.900294)">1088 చ.అ. పశ్చిమ ముఖ ఇల్లు (1100 sqft West Facing)</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 12px; font-family: 'Noto Sans Telugu', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="442.05909" y="63.673952" transform="rotate(-0 442.05909 63.673952)">స్థలం కొలతలు: 41' (వెడల్పు) × 45' (పొడవు) | 2 పడకగదులు, 1 వంటగది, విశాలమైన హాలు</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd416bb1c5b">
+   <rect x="51.45909" y="7.2" width="781.2" height="873.105882"/>
+  </clipPath>
+ </defs>
+</svg>

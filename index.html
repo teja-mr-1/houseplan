@@ -1835,6 +1835,16 @@
       return 1.0;
     }
 
+    function getTeluguVoice() {
+      if (!('speechSynthesis' in window)) return null;
+      const voices = window.speechSynthesis.getVoices();
+      // 1. Prefer Google Natural Telugu voice
+      let v = voices.find(voice => (voice.lang === 'te-IN' || voice.lang === 'te') && voice.name.includes('Google'));
+      // 2. Or any high quality Telugu voice
+      if (!v) v = voices.find(voice => voice.lang === 'te-IN' || voice.lang.startsWith('te'));
+      return v;
+    }
+
     function speakText(text) {
       if (voiceMuted || !text) return;
 
@@ -1849,16 +1859,22 @@
       const googleTtsUrl = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=te&client=tw-ob&q=' + encodeURIComponent(cleanText);
       ttsAudio.src = googleTtsUrl;
       ttsAudio.playbackRate = getAudioPlaybackRate();
-      ttsAudio.play().catch(err => {
-        console.warn("Google Telugu TTS play error, fallback to browser synthesis:", err);
-        if ('speechSynthesis' in window) {
-          window.speechSynthesis.cancel();
-          const u = new SpeechSynthesisUtterance(cleanText);
-          u.lang = 'te-IN';
-          u.rate = getAudioPlaybackRate();
-          window.speechSynthesis.speak(u);
-        }
-      });
+
+      const playPromise = ttsAudio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(err => {
+          console.warn("Google Audio Play Error, switching to Natural Telugu Synthesis:", err);
+          if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+            const u = new SpeechSynthesisUtterance(cleanText);
+            u.lang = 'te-IN';
+            const naturalVoice = getTeluguVoice();
+            if (naturalVoice) u.voice = naturalVoice;
+            u.rate = getAudioPlaybackRate();
+            window.speechSynthesis.speak(u);
+          }
+        });
+      }
     }
 
     // Pre-load voices for SpeechSynthesis
